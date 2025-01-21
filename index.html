@@ -1,12 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="./index.css" rel="stylesheet">
+    <title>calcy</title>
+    <link href="./index.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <h5>This is dummy</h5>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./images/logo.png" class="logo" />
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <!-- headertext -->
+            <div class="header-text">
+                <p>Frontend Developer</p>
+                <h1>Hi, I'm <span>Swati</span><br> Rai from India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/user.png" alt="User Image" />
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <!-- <p>I am swati rai a web developer</p> -->
+                    <p>Hi! I'm Swati Rai, a passionate web developer with a love for creating beautiful, user-friendly
+                        websites. My journey in web development began "when I first learned
+                        HTML and CSS in high school, and it quickly turned into a full-time pursuit" and since then,
+                        I've been working with a variety of web technologies.</p>
+
+                    <p>I specialize in front-end technologies like HTML, CSS, JavaScript, and React, as well as back-end
+                        development with php. I also have experience in building responsive websites and
+                        web applications that provide smooth and interactive user experiences.</p>
+
+                    <p>Throughout my career, I have had the opportunity to work on several exciting projects, including
+                        IT Website , Hotel Management Website etc. These experiences have honed my problem-solving
+                        skills and taught me the importance of continuous learning in this ever-evolving field.</p>
+
+                    <p>As a developer, I am always excited to tackle new challenges and work with cutting-edge
+                        technologies. My goal is to keep improving my skills and eventually contribute to open-source
+                        projects and collaborate with like-minded professionals in the web development community.</p>
+
+                    <p>Feel free to connect with me if you'd like to discuss web development, share ideas, or
+                        collaborate on exciting projects!</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI UX</span><br>Designing Web Interfaces</li>
+                            <li><span>WEB DEVELOPMENT</span><br>Web Developer</li>
+                            <li><span>FRONTEND DEVELOPMENT</span><br>Frontend Developer</li>
+                            <li><span>PHP DEVELOPMENT</span><br>Php Developer</li>
+                        </ul>
+                    </div>
+                    <!-- You can add Experience and Education content here -->
+                    <!-- experience -->
+                    <!-- Tab Content for Experience -->
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>JULY 2023 - DECEMBER 2024</span><br>Frontend Training at Ducat Institute</li>
+                            <li><span>JANUARY 2024 - JANUARY 2025</span><br>Web Developer at Pss Pvt Ltd.</li>
+                        </ul>
+                    </div>
+                    <!-- education -->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022-2025</span><br>B.Tech from TIT , Bhopal </li>
+                            <li><span>2023 -2023</span><br>Frontend Trainiing at Ducat Institute</li>
+                            <li><span>2019 -2022</span><br>Diploma from Govt girls polytechnic , varansi</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- servicess -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-tittle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>
+                        As a skilled web developer, I offer a wide range of services to help businesses establish a
+                        strong online presence. Whether you're looking for a simple website, a full-fledged web
+                        application, or an e-commerce platform, I have the expertise to bring your vision to life.</p>
+
+                    <!-- Read More Button -->
+                    <button id="readMoreBtn">Read More</button>
+
+                    <!-- Hidden Content (list of services) -->
+                    <div id="readMoreContent">
+                        <ul>
+                            <li>UI/UX Design</li>
+                            <li>Web Interface Design</li>
+                            <li>User-Centered Design</li>
+                            <li>Responsive Design</li>
+                            <li>Interaction Design</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <!-- ii box -->
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Frontend Development</h2>
+                    <p>As a frontend developer, I specialize in creating visually appealing, user-friendly, and
+                        responsive websites that provide seamless experiences across devices. I focus on delivering
+                        high-quality front-end code, ensuring that every website or web application is both functional
+                        and beautiful.</p>
+
+
+
+                    <!-- Second "Show More" Button (with new unique ID and updated design) -->
+                    <button class="toggleBtn" id="toggleBtn2">Read More</button>
+
+                    <!-- Hidden Content (list of features/services) for the second section -->
+                    <div class="contentSection" id="contentSection2">
+                        <ul>
+                            <li>Develop websites that automatically adjust to any screen size—whether it's a desktop,
+                                tablet, or smartphone.</li>
+                            <li>Use CSS3 to style your website with advanced layouts, animations, transitions, and
+                                responsive design techniques.</li>
+                            <li>Implement interactive and dynamic elements such as sliders, carousels, form validations,
+                                and more using JavaScript.</li>
+                            <li>Work closely with UI/UX designers to turn design prototypes into fully functional
+                                front-end code.</li>
+                        </ul>
+                        <!-- <a href="#">Learn More</a> -->
+                    </div>
+
+
+
+
+
+
+                </div>
+                <!-- iiibox -->
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Web Design</h2>
+                    <p>
+                        As a passionate web designer, I specialize in crafting stunning and intuitive websites that are
+                        not only visually engaging but also highly functional. I believe that a great website combines
+                        creativity with usability, ensuring a seamless experience for users across all devices and
+                        screen sizes.</p>
+                    <!-- First Read More Button -->
+                    <button class="readMoreBtn" id="readMoreBtn1">Read More</button>
+
+                    <!-- Hidden List for Web Design Services -->
+                    <div class="readMoreContent" id="readMoreContent1">
+                        <ul>
+                            <li>Create visually appealing websites that align with your brand identity and goals.</li>
+                            <li>Design intuitive user interfaces (UI) that ensure seamless navigation and excellent user
+                                experience (UX).</li>
+                            <li>Ensure websites are fully responsive, adjusting perfectly across all devices and screen
+                                sizes.</li>
+                            <li>Implement modern design trends such as minimalism, flat design, and microinteractions to
+                                enhance user engagement.</li>
+                            <li>Apply effective use of typography and color theory to create balanced, readable, and
+                                aesthetically pleasing layouts.</li>
+                            <li>Optimize websites for fast loading times and better performance, contributing to
+                                improved user retention.</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- portfolio -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-tittle">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/IT.jpg">
+                    <div class="layer">
+                        <h3>IT Website</h3>
+                        <p>This IT website was designed to provide innovative solutions for businesses looking to
+                            enhance their online presence. Our team focused on user experience, responsiveness, and
+                            performance optimization.
+                            <br>
+                            For this project, we used a variety of modern technologies and frameworks to ensure a
+                            robust, secure, and scalable solution. The site was developed using HTML5 and CSS3 for
+                            structural and stylistic design, while JavaScript was utilized for dynamic interactions and
+                            responsiveness. We incorporated Bootstrap for quick, mobile-first design, and jQuery to
+                            enhance user interactions.
+                        </p>
+
+
+
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <!-- ii -->
+                <div class="work">
+                    <img src="./images/hotel.webp">
+                    <div class="layer">
+                        <h3> Hotel Website</h3>
+                        <p>This Hotel Website was developed with the goal of providing a seamless, user-friendly online
+                            experience for both potential guests and hotel staff. The website offers easy navigation,
+                            quick access to essential information, and an intuitive booking system.
+                            <br>The Hotel Website offers a fully responsive design, ensuring that it works flawlessly on
+                            desktops, tablets, and mobile devices. The site features an interactive booking system that
+                            allows users to select check-in/check-out dates, room types, and additional services like
+                            spa treatments or dining options.
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <!-- iii -->
+                <div class="work">
+                    <img src="./images/ww1.webp">
+                    <div class="layer">
+                        <h3>Spotify Clone</h3>
+                        <p>The Spotify Clone provides users with an intuitive, responsive interface that works
+                            seamlessly on desktops, tablets, and mobile devices. Key features include a real-time music
+                            player, allowing users to play, pause, skip, and control volume easily, along with a search
+                            bar for finding songs, albums, and artists quickly.
+                            The Spotify Clone was built using React.js for the front-end, providing a smooth, dynamic
+                            user experience. </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- <a href="#" class="btn">See More</a> -->
+        </div>
+    </div>
+
+    <!-- contact form -->
+    <div id="contact">
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-tittle">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>swatirai691@gmail.com</p>
+                        <p><i class="fa-solid fa-phone-square-alt"></i>8102799920</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <a href="./images/SwatiraiCV.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form action="">
+                            <input type="text" name="name" placeholder="Your Name" required />
+                            <input type="text" name="email" placeholder="Your Email" required />
+                            <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Swatirai. Made with <i class="fa-solid fa-heart"></i> By Easy Tutorials</p>
+        </div>
+    </div>
+    <script src="./script.js"></script>
 </body>
-</html>
+</html
